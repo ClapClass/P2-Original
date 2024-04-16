@@ -15,7 +15,7 @@ mV angegeben.
 
 import csv
 
-def read(path="calibration.csv", *columns):
+def read(path="./params/calibration.csv", *columns):
     """
     Return values of cvs-file as a list of python dictionaries
     """
@@ -32,7 +32,7 @@ def read(path="calibration.csv", *columns):
     return d
 
 if __name__=="__main__":
-    d = read("waermegang.csv", "t", "U")
+    d = read("./params/waermegang.csv", "t", "U")
     #d = read("calibration.csv", "T", "U")
     for r in d:
         print("t (in s)=", r["t"], " U (in mV)=", r["U"])
