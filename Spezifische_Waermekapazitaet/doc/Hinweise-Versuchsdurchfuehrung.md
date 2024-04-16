@@ -44,10 +44,10 @@ Beschreiben und begründen Sie Ihre Versuchsplanung, **messen Sie sorgfältig un
 
 - Kühlen Sie den Al-Hohlzylinder (AL) mit Flüssigstickstoff im Nalgene-Isolierbehälter auf $T=-196^{\circ}\mathrm{C}$ (Siedetemperatur von Flüssigstickstoff) ab. 
 - Bereiten Sie den Edelstahl-Isolierbehälter (EI) durch Ausschwenken mit Flüssigstickstoff auf die Aufnahme von AL vor. 
-- Heizen Sie AL dann mit Hilfe der eingebauten Heizwicklung innerhalb von EI mit konstanter Heizleistung (von $\approx 20\,\mathrm{W}$) wieder auf und zeichnen Sie mit Hilfe des Datenloggers den Verlauf der Temperatur als Funktion der Zeit $T(t)$ auf. 
+- Heizen Sie AL dann mit Hilfe der eingebauten Heizwicklung innerhalb von EI mit konstanter Heizleistung (von $\lesssim 20\,\mathrm{W}$) wieder auf und zeichnen Sie mit Hilfe des Datenloggers den Verlauf der Temperatur als Funktion der Zeit $T(t)$ auf. **Heizen Sie den Zylinder nicht mit einer Stromstärke $I>2\ \mathrm{A}$, da sie sonst Gefahr laufen den Aufbau zu zerstören.** 
 - Zu diesem Zweck ist ein $\mathrm{NiCr}$-$\mathrm{Ni}$-Thermoelement (TE) in AL befestigt; mit Hilfe von Eiswasser können Sie TE eine stabile Referenztemperatur von $T_{\mathrm{ref}}=0^{\circ}\mathrm{C}$ zur Verfügung stellen. Sie müssen TE für die Messung von Temperaturen erst noch geeignet kalibrieren, d.h. die von TE ausgegebenen Spannungen in Temperaturen umrechnen (siehe **Aufgabe 2.2**).
 
-- Sie können diese Messung bereits starten, noch bevor Sie mit **Aufgabe 1** beginnen. Sie läuft, abgesehen von gelegentlichen Kontrollen der Heizleistung, automatisch ab. 
+- Sie können diese Messung bereits starten, noch bevor Sie mit **Aufgabe 1** beginnen. Sie läuft, abgesehen von gelegentlichen Kontrollen der Heizleistung, automatisch ab. **Behalten Sie Strom und Spannung aber auf jeden Fall im Auge, damit der Aufbau nciht überhitzt wird.** 
 
 #### Aufgabe 2.2: Kalibration des Thermoelements
 
