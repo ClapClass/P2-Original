@@ -26,7 +26,7 @@ bei bekannter Temperatur zur Massenangabe äquivalent ist. Dabei entspricht $M_{
 
 $$
 \begin{equation*}
-\dot{m}\equiv q_{m}
+q_{m}\equiv\dot{m}
 \end{equation*}
 $$
 von Relevanz, der entsprechend auch als **$pV$-Durchfluss** (oder Gasmenge)
@@ -77,19 +77,19 @@ wobei $p_{0}$ dem Anfangs- (z.B. Umgebungs-)druck zum Zeitpunkt $t_{0}$ zu Begin
 
 ## Strömungsleitwert und -widerstand
 
-Den Proportionalitätsfaktor 
+Laut Gleichung **(4)** [hier](https://gitlab.kit.edu/kit/etp-lehre/p2-praktikum/students/-/blob/main/Vakuum/doc/Hinweise-Vakuum.md) ist die Saugleistung durch ein zylindrisches, hinreichend langes Rohr proportional zur Druckdifferenz an den Rohrenden. Den Proportionalitätsfaktor 
 $$
 \begin{equation}
 L=\frac{\pi\,R^{4}\,\overline{p}}{8\,\eta\,\ell}
 \end{equation}
 $$
-in Gleichung **(4)** bezeichnet man als **Strömungsleitwert**. Der Kehrwert von $L$ wird als **Strömungswiderstand** bezeichnet. Beide lassen sich über den Zusammenhang 
+bezeichnet man als **Strömungsleitwert** des Rohrs. Der Kehrwert von $L$ wird als **Strömungswiderstand** des Rohrs bezeichnet. Beide lassen sich über den Zusammenhang 
 $$
 \begin{equation*}
 q_{pV}\propto\Delta p
 \end{equation*}
 $$
-allgemein definieren. Gleichung **(6)** gilt nur für viskose Fluide, für molekulare Strömungen ergibt sich der Zusammenhang: 
+allgemein definieren. Gleichung **(2)** gilt nur für viskose Fluide, für molekulare Strömungen ergibt sich der Zusammenhang: 
 $$
 \begin{equation}
 L = \sqrt{\frac{\pi\,k_{B}\,T}{18\,M_{m}}}\,\frac{R^{3}}{8\,\ell},
