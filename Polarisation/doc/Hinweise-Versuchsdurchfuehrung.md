@@ -49,7 +49,7 @@
     \end{equation*}
     ```
 
-    anpassen, wobei $U_{0}$, $U_{A}$, $\Omega$ und $\phi_{0}$ freie Parameter des Modells sind. Bei einer solchen Anpassung interessieren Sie sich in erster Linie für den Parameter $U_{A}$. 
+    anpassen, wobei $U_{0}$, $U_{A}$, $\Omega$ und $\phi_{0}$ freie Parameter des Modells sind. Bei einer solchen Anpassung interessieren Sie sich in erster Linie für den Parameter $U_{A}$. Die anderen Parameter dienen dazu die wesentlichen Eigenschaften der Messreihe wiederzugeben. 
 
   - Überprüfen Sie den $\chi^{2}$-Wert der Anpassung. Weist dieser darauf hin, dass das Modell die Daten gut beschreiben kann überprüfen Sie, wie weit der Wert von $U_{A}$ im Rahmen der aus der Anpassung bestimmten Unsicherheit $\Delta U_{A}$ von 0 entfernt ist (den sog. *pull* $\delta$, siehe z.B. Seite 37/58 [hier](https://labs.physik.kit.edu/downloads/P1Datnauswertung-2023-10-26.pdf)). Für $`\delta>3`$ sprechen wir in der (Teilchen-)physik von einer Evidenz (d.h. einen Hinweis) auf einen Effekt. Für $`\delta>5`$ von einer Beobachtung.
 
