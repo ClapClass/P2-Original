@@ -45,7 +45,7 @@
 
     ```math
     \begin{equation*}
-    U(\varphi) = U_{0}+U_{A}\sin(\Omega\,\vaphi+\phi_{0})
+    U(\varphi) = U_{0}+U_{A}\sin(\Omega\,\varphi+\phi_{0})
     \end{equation*}
     ```
 
