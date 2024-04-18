@@ -83,7 +83,7 @@ $$
 L=\frac{\pi\,R^{4}\,\overline{p}}{8\,\eta\,\ell}
 \end{equation}
 $$
-bezeichnet man als **Strömungsleitwert**, den Kehrwert von $L$ als **Strömungswiderstand** des Rohrs. Beide lassen sich über den Zusammenhang 
+bezeichnet man als **Strömungsleitwert**, den Kehrwert von $L$ als **Strömungswiderstand** des Rohrs. Beide Größen lassen sich über den Zusammenhang 
 $$
 \begin{equation*}
 q_{pV}\propto\Delta p
