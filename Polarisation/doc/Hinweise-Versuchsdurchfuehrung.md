@@ -23,16 +23,38 @@
 ##### Untersuchungen zur elliptischen/zirkularen Polarisation
 
 - Führen Sie Ihre Untersuchungen zur elliptischen/zirkularen Polarisation **nur mit monochromatischem Licht** durch. 
+
 - Im Glimmer, als doppelbrechendem Medium, gibt es zwei optische Achsen entlang derer sich das Licht unterschiedlich schnell ausbreitet (eine "langsame" und eine "schnelle" Achse). Um maximale elliptsche/zirkulare Polarisation zu beobachten müssen Sie die VP im Strahlengang so ausrichten, dass die Lichtintensität entlang beider Achsen gleichgroß ist. Sie erreichen dies z.B. wie folgt: 
   - Polarisieren Sie das Licht linear mit Hilfe von PF.
   - Verdrehen Sie AF, so dass $U=0$.
   - Bringen Sie VP ein, bei zufälliger Ausrichtung sollten Sie $U\neq0$ beobachten.
   - Drehen Sie VP, um wieder den Zustand $U=0$ herzustellen. In diesem Fall verläuft der linear polarisierte Strahl exakt zu einer der Achsen, so dass es bei der Transmission des Lichts nicht zur Änderung der Polarisation kommt. 
   - Verdrehen Sie jetzt AF um $45^{\circ}$, damit sollten Sie erreichen, dass beide optische Achsen des Kristalls mit gleicher Intensität bestrahlt werden. 
+  
 - Dieses Verfahren müssen Sie für jedes VP immer wieder neu durchführen. 
+
 - Nehmen Sie die Untersuchungen für zwei beliebige VP unterschiedlicher Dicke vor. 
+
 - Gehen Sie dann analog für ein $\lambda/4$-Plättchen vor, dessen Abmessungen so sind, dass Sie zirkular polarisiertes Licht erhalten. 
-- Verwenden Sie auch zur Anpassung an die Messreihe zur Untersuchung der zirkularen Polarisation ein Modell, dass eine Anisotropie der Verteilung erlaubt. Bestimmen Sie diese Anisotropie numerisch und diskutieren Sie ggf. ihr Zustandekommen.
+
+- Verwenden Sie auch zur Anpassung an die Messreihe zur Untersuchung der zirkularen Polarisation ein Modell, dass eine Anisotropie der Verteilung erlaubt. Bestimmen Sie diese Anisotropie numerisch und diskutieren Sie ggf. ihr Zustandekommen. Eine Möglichkeit dies zu tun sieht z.B. wie folgt aus: 
+
+  - Für perfekt zirkular polarisiertes Licht erwarten Sie eine isotrope Verteilung für $U\neq U(\varphi)$. In der Praxis kann es sein, dass Sie immer noch eine leicht (sinusförmige) Modulation $U(\varphi)$ feststellen. 
+
+  - Sie können diese Modulation quantifizieren, wenn Sie an die Messreihe ein Modell der Form
+
+    ```math
+    \begin{equation*}
+    U(\varphi) = U_{0}+U_{A}\sin(\Omega\,\vaphi+\phi_{0})
+    \end{equation*}
+    ```
+
+    anpassen, wobei $U_{0}$, $U_{A}$, $\Omega$ und $\phi_{0}$ freie Parameter des Modells sind. Bei einer solchen Anpassung interessieren Sie sich in erster Linie für den Parameter $U_{A}$. 
+
+  - Überprüfen Sie den $\chi^{2}$-Wert der Anpassung. Weist dieser darauf hin, dass das Modell die Daten gut beschreiben kann überprüfen Sie, wie weit der Wert von $U_{A}$ im Rahmen der aus der Anpassung bestimmten Unsicherheit $\Delta U_{A}$ von 0 entfernt ist (den sog. *pull* $\delta$, siehe z.B. Seite 37/58 [hier](https://labs.physik.kit.edu/downloads/P1Datnauswertung-2023-10-26.pdf)). Für $\delta>3$ sprechen wir in der (Teilchen-)physik von einer Evidenz (d.h. einen Hinweis) auf einen Effekt. Für $\delta>5$ von einer Beobachtung.
+
+  - Abschließend können Sie eine "Anpassung eines trivialen Modells" mit nur einer Konstanten $U_{0}$ (ohne den zusätzlichen Sinus-Term) durchführen und den $\chi^{2}$-Wert dieser Anpassung überprüfen. Weist dieser wiederum darauf hin, dass dieses triviale Modell die Daten gut beschreiben kann ist eine Anisotropie nicht statistisch nachweisbar.  
+
 
 #### Aufgabe 2.2: Differenz der Brechungsindizes der beobachteten Strahlen
 
@@ -47,7 +69,7 @@
 - Zusammenfassend ergibt sich die Formel: 
   ```math
   \begin{equation*}
-  \Delta n = \frac{\lambda_{0}}{2\pi\,d}\arctan\left(\sqrt{\frac{U_{\mathrm{min}}}{U_{\mathrm{min}}}}\right),
+  \Delta n = \frac{\lambda_{0}}{2\pi\,d}\arctan\left(\sqrt{\frac{U_{\mathrm{min}}}{U_{\mathrm{max}}}}\right),
   \end{equation*}
   ```
 
