@@ -32,7 +32,7 @@ Wir listen im Folgenden die wichtigsten **Lehrziele** auf, die wir Ihnen mit dem
 
 Einen typischer Aufbau der Apparatur für diesen Versuch ist in **Abbildung 1** gezeigt:
 
-<img src="./figures/Polarisation.jpg" width="1000" style="zoom:100%;" />
+<img src="./figures/Polarisation.png" width="1000" style="zoom:100%;" />
 
 **Abbildung 1**: (Ein typischer Aufbau des Versuchs Polarisation und Doppelbrechung)
 
