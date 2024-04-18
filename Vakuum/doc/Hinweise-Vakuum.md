@@ -94,17 +94,19 @@ $$
 &\\
 &\text{Nach Separation der Variablen:}\\
 &\\
-&\int\limits_{0}^{L}p\dot{V}\,\mathrm{d}x = -\int\limits_{p_{\mathrm{ein}}}^{p_{\mathrm{aus}}}\frac{\pi\,R^{4}}{8\,\eta}\,p\,\mathrm{d}p; \\
+&\int\limits_{0}^{\ell}p\dot{V}\,\mathrm{d}x = -\int\limits_{p_{\mathrm{ein}}}^{p_{\mathrm{aus}}}\frac{\pi\,R^{4}}{8\,\eta}\,p\,\mathrm{d}p; \\
 &\\
-&p\,\dot{V} = -\frac{\pi\,R^{4}}{8\,\eta\,L}\left(\frac{p_{\mathrm{aus}}^{2}}{2}-\frac{p_{\mathrm{ein}}^{2}}{2}\right) = 
--\frac{\pi\,R^{4}}{8\,\eta\,L}\,\overline{p}\,\Delta p \\
+&p\,\dot{V} = -\frac{\pi\,R^{4}}{8\,\eta\,\ell}\left(\frac{p_{\mathrm{aus}}^{2}}{2}-\frac{p_{\mathrm{ein}}^{2}}{2}\right) = 
+-\frac{\pi\,R^{4}}{8\,\eta\,\ell}\,\overline{p}\,\Delta p \\
 &\\
 &\text{mit:} \\
 &\\
-&\overline{p} = \frac{p_{\mathrm{aus}}+p_{\mathrm{ein}}}{2}; \qquad \Delta p = p_{\mathrm{aus}}-p_{\mathrm{ein}}.
+&\overline{p} = \frac{p_{\mathrm{aus}}+p_{\mathrm{ein}}}{2}; \qquad \Delta p = p_{\mathrm{aus}}-p_{\mathrm{ein}},
 \end{split}
 \end{equation}
 $$
+
+wobei $\ell$ dem Abstand zwischen den Messpunkten von $p_{\mathrm{ein}}$ und $p_{\mathrm{aus}}$ entspricht. 
 
 ## Grundbegriffe der Vakuumtechnik
 
@@ -186,7 +188,7 @@ wobei $p_{0}$ dem Anfangs- (z.B. Umgebungs-)druck zum Zeitpunkt $t_{0}$ zu Begin
 Den Proportionalitätsfaktor 
 $$
 \begin{equation}
-L=\frac{\pi\,R^{4}\,\overline{p}}{8\,\eta\,L}
+L=\frac{\pi\,R^{4}\,\overline{p}}{8\,\eta\,\ell}
 \end{equation}
 $$
 in Gleichung **(4)** bezeichnet man als **Strömungsleitwert**. Der Kehrwert von $L$ wird als **Strömungswiderstand** bezeichnet. Beide lassen sich über den Zusammenhang 
@@ -198,7 +200,7 @@ $$
 allgemein definieren. Gleichung **(6)** gilt nur für viskose Fluide, für molekulare Strömungen ergibt sich der Zusammenhang: 
 $$
 \begin{equation}
-L = \sqrt{\frac{\pi\,k_{B}\,T}{18\,M_{m}}}\,\frac{R^{3}}{8\,L},
+L = \sqrt{\frac{\pi\,k_{B}\,T}{18\,M_{m}}}\,\frac{R^{3}}{8\,\ell},
 \end{equation}
 $$
 wobei $k_{B}$ der Boltzmann-Konstanten und $T$ der Temperatur (in $\mathrm{K}$) entsprechen. Der Leitwert wird also vom Druck unabhängig und $R$ geht nur noch in dritter Potenz ein.  
