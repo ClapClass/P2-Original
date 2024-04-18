@@ -68,7 +68,67 @@ $$
 \end{split}
 \end{equation*}
 $$
-Für den Fluss eines Fluids durch ein zylindrisches Rohr mit Radius $R$ wählen wir die Randbedingung $v(R)=0$. Integriert man mit diesen Randbedingungen den obigen Ausdruck von $R$ bis $r$ erhält man das Geschwindigkeitsprofil des Fluids
+Grundbegriffe der Vakuumtechnik
+In der Vakuuumtechnik bezeichnet man den Volumendurchfluss (Volumenstrom, siehe Gleichung (3), für viskose Fluide)
+
+V˙≡S
+durch die Ansaugöffnung einer Pumpe als Saugvermögen. Je nach Druck und Temperatur (T) verändert sich die Stoffmenge (n) des geförderten Gases bei gleichem Volumendurchfluss.
+
+Die Menge eines Gases kann durch seine Masse m abgeschätzt werden. Bei Gasen gebräuchlicher ist jedoch die Angabe durch das Produkt pV, das nach der idealen Gasgleichung 
+
+pV=nRT=mMmRT;m=pVRTMm,
+bei bekannter Temperatur zur Massenangabe äquivalent ist. Dabei entspricht Mm der molaren Masse der Gasmoleküle. Für eine Pumpe ist neben dem Volumen- der Massenfluss
+
+m˙≡qm
+von Relevanz, der entsprechend auch als pV-Durchfluss (oder Gasmenge)
+
+qpV=d(pV)dt
+angegeben wird. 
+
+Die Saugleistung einer Pumpe wird (in Einheiten einer Leistung) durch qpV an der Ansaugöffnung der Pumpe angegeben. Bei konstantem Druck gilt der einfache Zusammenhang 
+
+qpV=d(pV)dt|p=const.=pV˙=pS
+(siehe Gleichung (4) für viskose Fluide). 
+
+Wenn wir beim Saugvorgang von einer adiabatischen Zustandsänderung des Gases (δQ=0) ausgehen erhalten wir: 
+
+δQ=d(pV)=0;=pdV+Vdp=pSdt+Vdp;dpp=−SVdt,
+wobei V dem Volumen der evakuierten Apparatur entspricht. Für eine Pumpe, die ein Gas aus einer Apparatur hinreichend großen Volumens V, ohne weiteren Wärmeaustausch absaugt, erwartet man also einen exponentiellen Verlauf des Drucks 
+
+(5)ln⁡(pp0)=−SV(t−t0)p(t)=p0exp⁡(−SV(t−t0)),
+wobei p0 dem Anfangs- (z.B. Umgebungs-)druck zum Zeitpunkt t0 zu Beginn des Pumpvorgangs entspricht. 
+
+Strömungsleitwert und -widerstand
+Den Proportionalitätsfaktor 
+
+(6)L=πR4p―8ηℓ
+in Gleichung (4) bezeichnet man als Strömungsleitwert. Der Kehrwert von L wird als Strömungswiderstand bezeichnet. Beide lassen sich über den Zusammenhang 
+
+qpV∝Δp
+allgemein definieren. Gleichung (6) gilt nur für viskose Fluide, für molekulare Strömungen ergibt sich der Zusammenhang: 
+
+(7)L=πkBT18MmR38ℓ,
+wobei kB der Boltzmann-Konstanten und T der Temperatur (in K) entsprechen. Der Leitwert wird also vom Druck unabhängig und R geht nur noch in dritter Potenz ein.  
+
+Bei Parallelschaltung von Rohren addieren sich die Saugleistungen, während der Druckunterschied gleich bleibt: 
+
+qpV(ges)=LgesΔp=qpV(1)+qpV(2)=L1Δp+L2Δp=(L1+L2)Δp;Lges=L1+L2.
+Bei Serienschaltung von Rohren addieren sich die Druckunterschiede während die Saugleistung gleich bleibt: 
+
+Δpges=Δp1+Δp2;qpVLges=qpVL1+qpVL2;1Lges=1L1+1L2.
+Es handelt sich dabei um ein Analogon zu den Kirchhoffschen Regeln der Elektrizitätslehre mit den folgenden Ersetzungen: 
+
+dpdxV˙⟷Idpdx⟷UdpdxL⟷σdpdxL−1⟷R.
+Effektive Saugleistung
+Eine Pumpe schließt nur selten direkt an die zu evakuierende Apparatur an. Ist dies nicht der Fall, ist das Saugvermögen der Pumpe durch den Gesamtleitwert der verbindenden Leitungselemente reduziert. 
+
+Nimmt man an, dass sich die Temperatur des Gases während des Durchflusses durch die Leitungselemente nicht wesentlich ändert, so dass also der pV-Durchfluss durch die Leitungselemente konstant ist, so erhält man für das effektive Saugvermögen Seff hinter den Leitungselementen den Zusammenhang 
+
+qpV=p1S=p2Seff;Seff=p1p2S.
+Für Seff folgt also:
+
+L=qpVp2−p1=p1p2−p1S=p2p2−p1Seff;p2p1=SL+1;SeffL=(1−p1p2)=(1−LS+L)=SS+L;(S+L)Seff=SL;S+LSL=1Seff1L+1S=1SeffSeff=(1L+1S)−1.
+Die effektive Saugleistung der Pumpe ergibt sich also durch "Serienschaltung" mit den entsprechenden Leitungselementen.Für den Fluss eines Fluids durch ein zylindrisches Rohr mit Radius $R$ wählen wir die Randbedingung $v(R)=0$. Integriert man mit diesen Randbedingungen den obigen Ausdruck von $R$ bis $r$ erhält man das Geschwindigkeitsprofil des Fluids
 $$
 \begin{equation}
 v(r) = \int\limits_{R}^{r}\frac{r}{2\,\eta}\,\frac{\mathrm{d}p}{\mathrm{d}x}\,\mathrm{d}r = \frac{r^{2}-R^{2}}{4\,\eta}\frac{\mathrm{d}p}{\mathrm{d}x},
@@ -108,181 +168,9 @@ $$
 
 wobei $\ell$ dem Abstand zwischen den Messpunkten von $p_{\mathrm{ein}}$ und $p_{\mathrm{aus}}$ entspricht. 
 
-## Grundbegriffe der Vakuumtechnik
-
-In der Vakuuumtechnik bezeichnet man den Volumendurchfluss ([Volumenstrom](https://de.wikipedia.org/wiki/Volumenstrom#Normvolumenstrom), siehe Gleichung **(3)**, für viskose Fluide)
-
-$$
-\begin{equation*}
-\dot{V}\equiv S
-\end{equation*}
-$$
-durch die Ansaugöffnung einer Pumpe als **Saugvermögen**. Je nach Druck und Temperatur ($T$) verändert sich die Stoffmenge ($n$) des geförderten Gases bei gleichem Volumendurchfluss.
-
-Die Menge eines Gases kann durch seine Masse $m$ abgeschätzt werden. Bei Gasen gebräuchlicher ist jedoch die Angabe durch das Produkt $pV$, das nach der idealen Gasgleichung 
-
-$$
-\begin{equation*}
-\begin{split}
-& pV = n\,R\,T = \frac{m}{M_{m}}R\,T; \\
-&\\
-&m = \frac{pV}{R\,T}M_{m},
-\end{split}
-\end{equation*}
-$$
-bei bekannter Temperatur zur Massenangabe äquivalent ist. Dabei entspricht $M_{m}$ der [molaren Masse](https://de.wikipedia.org/wiki/Molare_Masse) der Gasmoleküle. Für eine Pumpe ist neben dem Volumen- der **Massenfluss**
-
-$$
-\begin{equation*}
-\dot{m}\equiv q_{m}
-\end{equation*}
-$$
-von Relevanz, der entsprechend auch als **$pV$-Durchfluss** (oder Gasmenge)
-
-$$
-\begin{equation*}
-q_{pV} = \frac{\mathrm{d}(pV)}{\mathrm{dt}}
-\end{equation*}
-$$
-angegeben wird. 
-
-Die **Saugleistung** einer Pumpe wird (in Einheiten einer Leistung) durch $q_{pV}$ an der Ansaugöffnung der Pumpe angegeben. Bei konstantem Druck gilt der einfache Zusammenhang 
-
-$$
-\begin{equation*}
-q_{pV} = \left.\frac{\mathrm{d}(pV)}{\mathrm{d}t}\right|_{p=const.} = p\dot{V} = p\,S
-\end{equation*}
-$$
-(siehe Gleichung **(4)** für viskose Fluide). 
-
-Wenn wir beim Saugvorgang von einer adiabatischen Zustandsänderung des Gases ($\delta Q=0$) ausgehen erhalten wir: 
-
-$$
-\begin{equation*}
-\begin{split}
-\delta Q &= \mathrm{d}(pV) = 0;\\
-&\\
-&= p\,\mathrm{d}V  + V\,\mathrm{d}p \\
-&\\
-&= p\,S\,\mathrm{d}t  + V\,\mathrm{d}p;\\
-&\\
-\frac{\mathrm{d}p}{p} &= -\frac{S}{V}\mathrm{d}t,
-\end{split}
-\end{equation*}
-$$
-wobei $V$ dem Volumen der evakuierten Apparatur entspricht. Für eine Pumpe, die ein Gas aus einer Apparatur hinreichend großen Volumens $V$, ohne weiteren Wärmeaustausch absaugt, erwartet man also einen exponentiellen Verlauf des Drucks 
-
-$$
-\begin{equation}
-\begin{split}
-&\ln\left(\frac{p}{p_{0}}\right) = -\frac{S}{V}\left(t-t_{0}\right)\\
-&\\
-&p(t) = p_{0}\,\exp\left(-\frac{S}{V}\left(t-t_{0}\right)\right),
-\end{split}
-\end{equation}
-$$
-wobei $p_{0}$ dem Anfangs- (z.B. Umgebungs-)druck zum Zeitpunkt $t_{0}$ zu Beginn des Pumpvorgangs entspricht. 
-
-## Strömungsleitwert und -widerstand
-
-Den Proportionalitätsfaktor 
-$$
-\begin{equation}
-L=\frac{\pi\,R^{4}\,\overline{p}}{8\,\eta\,\ell}
-\end{equation}
-$$
-in Gleichung **(4)** bezeichnet man als **Strömungsleitwert**. Der Kehrwert von $L$ wird als **Strömungswiderstand** bezeichnet. Beide lassen sich über den Zusammenhang 
-$$
-\begin{equation*}
-q_{pV}\propto\Delta p
-\end{equation*}
-$$
-allgemein definieren. Gleichung **(6)** gilt nur für viskose Fluide, für molekulare Strömungen ergibt sich der Zusammenhang: 
-$$
-\begin{equation}
-L = \sqrt{\frac{\pi\,k_{B}\,T}{18\,M_{m}}}\,\frac{R^{3}}{8\,\ell},
-\end{equation}
-$$
-wobei $k_{B}$ der Boltzmann-Konstanten und $T$ der Temperatur (in $\mathrm{K}$) entsprechen. Der Leitwert wird also vom Druck unabhängig und $R$ geht nur noch in dritter Potenz ein.  
-
-Bei Parallelschaltung von Rohren addieren sich die Saugleistungen, während der Druckunterschied gleich bleibt: 
-$$
-\begin{equation*}
-\begin{split}
-&q_{pV}^{\mathrm{(ges)}}= L_{\mathrm{ges}} \Delta p = q_{pV}^{(1)}+q_{pV}^{(2)}= L_{1}\Delta p + L_{2}\Delta p = \left(L_{1}+L_{2}\right)\Delta p;\\
-&\\
-&L_{\mathrm{ges}} = L_{1} + L_{2}.
-\end{split}
-\end{equation*}
-$$
-Bei Serienschaltung von Rohren addieren sich die Druckunterschiede während die Saugleistung gleich bleibt: 
-$$
-\begin{equation*}
-\begin{split}
-&\Delta p_{\mathrm{ges}}= \Delta p_{1} + \Delta p_{2}; \\
-&\\
-&\frac{q_{pV}}{L_{\mathrm{ges}}} = \frac{q_{pV}}{L_{1}} + \frac{q_{pV}}{L_{2}};\\
-&\\
-&\frac{1}{L_{\mathrm{ges}}} = \frac{1}{L_{1}} + \frac{1}{L_{2}}.\\
-\end{split}
-\end{equation*}
-$$
-Es handelt sich dabei um ein Analogon zu den [Kirchhoffschen Regeln](https://de.wikipedia.org/wiki/Kirchhoffsche_Regeln) der Elektrizitätslehre mit den folgenden Ersetzungen: 
-$$
-\begin{equation*}
-\begin{split}
-\vphantom{\frac{\mathrm{d}p}{\mathrm{d}x}}\dot{V}\qquad&\longleftrightarrow \qquad I\\
-\frac{\mathrm{d}p}{\mathrm{d}x}\qquad&\longleftrightarrow\qquad U \\
-\vphantom{\frac{\mathrm{d}p}{\mathrm{d}x}}L\qquad&\longleftrightarrow\qquad\sigma \\
-\vphantom{\frac{\mathrm{d}p}{\mathrm{d}x}}L^{-1}\qquad&\longleftrightarrow\qquad R. \\
-\end{split}
-\end{equation*}
-$$
-
-### Effektive Saugleistung
-
-Eine Pumpe schließt nur selten direkt an die zu evakuierende Apparatur an. Ist dies nicht der Fall, ist das Saugvermögen der Pumpe durch den Gesamtleitwert der verbindenden Leitungselemente reduziert. 
-
-Nimmt man an, dass sich die Temperatur des Gases während des Durchflusses durch die Leitungselemente nicht wesentlich ändert, so dass also der $pV$-Durchfluss durch die Leitungselemente konstant ist, so erhält man für das effektive Saugvermögen $S_{\mathrm{eff}}$ hinter den Leitungselementen den Zusammenhang 
-
-$$
-\begin{equation*}
-\begin{split}
-&q_{pV} = p_{1}\,S = p_{2}\,S_{\mathrm{eff}};\\
-&\\
-&S_{\mathrm{eff}} = \frac{p_{1}}{p_{2}}\,S.
-\end{split}
-\end{equation*}
-$$
-
-
-Für $S_{\mathrm{eff}}$ folgt also:
-
-$$
-\begin{equation*}
-\begin{split}
-&L = \frac{q_{pV}}{p_{2}-p_{1}} = \frac{p_{1}}{p_{2}-p_{1}}S = \frac{p_{2}}{p_{2}-p_{1}}S_{\mathrm{eff}};\\
-&\\
-&\frac{p_{2}}{p_{1}} = \frac{S}{L}+1;\\
-&\\
-&\frac{S_{\mathrm{eff}}}{L} = \left(1-\frac{p_{1}}{p_{2}}\right) = \left(1-\frac{L}{S+L}\right) = \frac{S}{S+L}; \\
-&\\
-&\left(S+L\right)\,S_{\mathrm{eff}} = S\,L; \\
-&\\
-&\frac{S+L}{S\,L} = \frac{1}{S_{\mathrm{eff}}} \\
-&\\
-&\frac{1}{L} + \frac{1}{S} = \frac{1}{S_{\mathrm{eff}}} \\
-&\\
-&S_{\mathrm{eff}} = \left(\frac{1}{L} + \frac{1}{S}\right)^{-1}. \\
-\end{split}
-\end{equation*}
-$$
-
-Die effektive Saugleistung der Pumpe ergibt sich also durch "Serienschaltung" mit den entsprechenden Leitungselementen.
-
 # Navigation
 
-[Main](https://gitlab.kit.edu/kit/etp-lehre/p2-praktikum/students/-/tree/main/Vakuum)
+[Main](https://gitlab.kit.edu/kit/etp-lehre/p2-praktikum/students/-/tree/main/Vakuum) | [Weiter](https://gitlab.kit.edu/kit/etp-lehre/p2-praktikum/students/-/blob/main/Vakuum/doc/Hinweise-Vakuum-a.md)
 
 
 
