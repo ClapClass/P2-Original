@@ -144,9 +144,9 @@ $$
 q_{pV} = \frac{\mathrm{d}(pV)}{\mathrm{dt}}
 \end{equation*}
 $$
-angegeben wird. Beachten Sie dass $q_{pV}$ zwar zu $q_{m}$ proportional, aber nicht damit identisch ist. Der $pV$-Durchfluss wird in Einheiten einer Leistung angegeben.   
+angegeben wird. 
 
-Die **Saugleistung** einer Pumpe wird durch $q_{pV}$ an der Ansaugöffnung der Pumpe angegeben. Bei konstantem Druck gilt der einfache Zusammenhang 
+Die **Saugleistung** einer Pumpe wird (in Einheiten einer Leistung) durch $q_{pV}$ an der Ansaugöffnung der Pumpe angegeben. Bei konstantem Druck gilt der einfache Zusammenhang 
 
 $$
 \begin{equation*}
