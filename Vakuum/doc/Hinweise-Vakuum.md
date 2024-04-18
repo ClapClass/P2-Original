@@ -86,7 +86,7 @@ $$
 \dot{V}\propto R^{4};\qquad \dot{V}\propto \frac{\mathrm{d}p}{\mathrm{d}x}.
 \end{equation*}
 $$
-Für strömdende Gase ist zwar der Massenfluss $\dot{m}$, nicht aber $\dot{V}$ konstant. Trotzdem ist Gleichung **(3)** differenziell anwendbar. Man verwendet es in diesem Fall oft in der Form
+Für strömdende Gase ist zwar der Massenfluss $\dot{m}$, nicht aber $\dot{V}$ konstant. Trotzdem ist Gleichung **(3)** differenziell anwendbar. Man verwendet sie in diesem Fall oft in der Form
 $$
 \begin{equation}
 \begin{split}

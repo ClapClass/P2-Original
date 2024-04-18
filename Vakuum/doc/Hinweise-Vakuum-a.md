@@ -2,14 +2,14 @@
 
 ## Grundbegriffe der Vakuumtechnik
 
-In der Vakuuumtechnik bezeichnet man den Volumendurchfluss ([Volumenstrom](https://de.wikipedia.org/wiki/Volumenstrom#Normvolumenstrom), siehe Gleichung **(3)** [hier](https://gitlab.kit.edu/kit/etp-lehre/p2-praktikum/students/-/blob/main/Vakuum/doc/Hinweise-Vakuum.md), für viskose Fluide)
+In der Vakuuumtechnik bezeichnet man den Volumendurchfluss ([Volumenstrom](https://de.wikipedia.org/wiki/Volumenstrom#Normvolumenstrom), siehe Gleichung **(3)** [hier](https://gitlab.kit.edu/kit/etp-lehre/p2-praktikum/students/-/blob/main/Vakuum/doc/Hinweise-Vakuum.md), für viskose Fluide) durch die Ansaugöffnung einer Pumpe als **Saugvermögen**
 
 $$
 \begin{equation*}
-\dot{V}\equiv S
+S\equiv\dot{V}.
 \end{equation*}
 $$
-durch die Ansaugöffnung einer Pumpe als **Saugvermögen**. Je nach Druck und Temperatur ($T$) verändert sich die Stoffmenge ($n$) des geförderten Gases bei gleichem Volumendurchfluss.
+Je nach Druck und Temperatur ($T$) verändert sich die Stoffmenge ($n$) des geförderten Gases bei gleichem Volumendurchfluss.
 
 Die Menge eines Gases kann durch seine Masse $m$ abgeschätzt werden. Bei Gasen gebräuchlicher ist jedoch die Angabe durch das Produkt $pV$, das nach der idealen Gasgleichung 
 
@@ -42,10 +42,10 @@ Die **Saugleistung** einer Pumpe wird (in Einheiten einer Leistung) durch $q_{pV
 
 $$
 \begin{equation*}
-q_{pV} = \left.\frac{\mathrm{d}(pV)}{\mathrm{d}t}\right|_{p=const.} = p\dot{V} = p\,S
+q_{pV} = \left.\frac{\mathrm{d}(pV)}{\mathrm{d}t}\right|_{p=const.} = p\dot{V} = p\,S.
 \end{equation*}
 $$
-(siehe Gleichung **(4)** [hier](https://gitlab.kit.edu/kit/etp-lehre/p2-praktikum/students/-/blob/main/Vakuum/doc/Hinweise-Vakuum.md) für viskose Fluide). 
+Die Größe $p\dot{V}$ haben Sie für viskose Fluide bereits in Gleichung **(4)** [hier](https://gitlab.kit.edu/kit/etp-lehre/p2-praktikum/students/-/blob/main/Vakuum/doc/Hinweise-Vakuum.md) gesehen. 
 
 Wenn wir beim Saugvorgang von einer adiabatischen Zustandsänderung des Gases ($\delta Q=0$) ausgehen erhalten wir: 
 
@@ -77,13 +77,13 @@ wobei $p_{0}$ dem Anfangs- (z.B. Umgebungs-)druck zum Zeitpunkt $t_{0}$ zu Begin
 
 ## Strömungsleitwert und -widerstand
 
-Laut Gleichung **(4)** [hier](https://gitlab.kit.edu/kit/etp-lehre/p2-praktikum/students/-/blob/main/Vakuum/doc/Hinweise-Vakuum.md) ist die Saugleistung durch ein zylindrisches, hinreichend langes Rohr proportional zur Druckdifferenz an den Rohrenden. Den Proportionalitätsfaktor 
+Laut Gleichung **(4)** [hier](https://gitlab.kit.edu/kit/etp-lehre/p2-praktikum/students/-/blob/main/Vakuum/doc/Hinweise-Vakuum.md) ist die Saugleistung durch ein zylindrisches, hinreichend langes Rohr proportional zur Druckdifferenz $\Delta p$ an den Rohrenden. Den Proportionalitätsfaktor 
 $$
 \begin{equation}
 L=\frac{\pi\,R^{4}\,\overline{p}}{8\,\eta\,\ell}
 \end{equation}
 $$
-bezeichnet man als **Strömungsleitwert** des Rohrs. Der Kehrwert von $L$ wird als **Strömungswiderstand** des Rohrs bezeichnet. Beide lassen sich über den Zusammenhang 
+bezeichnet man als **Strömungsleitwert**, den Kehrwert von $L$ als **Strömungswiderstand** des Rohrs. Beide lassen sich über den Zusammenhang 
 $$
 \begin{equation*}
 q_{pV}\propto\Delta p
