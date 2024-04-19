@@ -1,6 +1,6 @@
 # Hinweise für den Versuch Polarisation und Doppelbrechung
 
-## Doppelbrechung
+## Doppelbrechung [1/2]
 
 ### Tensor der dielektrischen Moduln und Doppelbrechung
 
@@ -66,7 +66,7 @@ Für uniaxial doppelbrechende Kristalle liegen zwei $n_{i}$ entartet vor, es gil
 - Den Strahl, dessen Polarisation senkrecht zur optischen Achse verläuft, bezeichnet man als **ordentlichen Strahl**; den zugehörigen Brechungsindex bezeichnet man als $n_{o}$ ("o" für "ordinair"). Dieser Strahl folgt dem [Snelliusschen Brechungsgesetz](https://de.wikipedia.org/wiki/Snelliussches_Brechungsgesetz), d.h. er wird bei senkrechtem Einfall auf das Medium nicht gebrochen. Die Elementarwellen des ordentlichen Strahls bilden Kugelwellen.  
 - Den Strahl, dessen Polarisation parallel zur optische Achse liegt, bezeichnet man als **außerordentlichen Strahl**; den zugehörigen Brechungsindex bezeichnet man als $n_{e}$ ("e" für "extraordinair"). Dieser Strahl folgt nicht dem Snelliusschen Brechungsgesetz, d.h. er wird selbst bei senkrechtem Einfall auf das Medium gebrochen. Die Elementarwellen des außerordentlichen Strahls bilden Rotationsellipsoide. 
 
-Die Differenz $n_{e}-n_{o}$ bezeichnet man als **optische Orientierung**. Uniaxiale Kristalle mit $n_{o}(=n_{\gamma})>n_{e}(=n)$ bezeichnet man als optisch negativ. Hier bewegt sich der ordentliche Strahl langsamer durch das Medium, als der außerordentliche Strahl. Uniaxiale Kristalle mit $n_{o}(=n)<n_{e}(=n_{\gamma})$ bezeichnet man als optisch positiv. 
+Die Differenz $n_{e}-n_{o}$ bezeichnet man als **optische Orientierung**. Uniaxiale Kristalle mit $`n_{o}(=n_{\gamma})>n_{e}(=n)`$ bezeichnet man als optisch negativ. Hier bewegt sich der ordentliche Strahl langsamer durch das Medium, als der außerordentliche Strahl. Uniaxiale Kristalle mit $`n_{o}(=n)<n_{e}(=n_{\gamma})`$ bezeichnet man als optisch positiv. 
 
 Eine Skizze des (links) ordentlichen und (rechts) außerordentlichen Strahls ist in **Abbilding 1** gezeigt: 
 
@@ -78,18 +78,7 @@ Eine Skizze des (links) ordentlichen und (rechts) außerordentlichen Strahls ist
 
 Beispiele für uniaxial doppelbrechende Kristalle sind [Kalkspat](https://de.wikipedia.org/wiki/Calcit) (optisch negativ) oder Eis (optisch positiv). 
 
-### Biaxiale Kristalle
-
-In biaxialen Kristallen gibt es **zwei optische Achsen**. Sie liegen in der Ebene, die durch $\hat{\alpha}$ und $\hat{\gamma}$ aufgespannt wird. Die Winkel der sich kreuzenden optischen Achsen werden jeweils durch $\hat{\alpha}$ und $\hat{\gamma}$ halbiert. Dies lässt sich wie folgt verstehen: 
-
-Im biaxialen Kristall liegt ein Indexellipsoid mit drei Hauptachsen unterschiedlicher Längen $n_{\alpha}$, $n_{\beta}$ und $n_{\gamma}$ vor. Dreht man das Ellipsoid um $\hat{\beta}$ nimmt der Halbmesser $n_{\gamma}^{\prime}$ (entlang $\hat{\gamma}$) der sich ergebenden [Schnittellipse](https://de.wikipedia.org/wiki/Ellipsoid#Bestimmung_einer_Schnittellipse) alle Werte zwischen $n_{\gamma}$ und $n_{\alpha}$ an. Da es sich dabei um eine stetige Transformation handelt gibt es also auch einem Winkel $\omega_{n_{\gamma}\to n_{\beta}}$, unter dem $n_{\gamma}^{\prime}$ den Wert $n_{\beta}$ annimmt. Damit ist die erste optische Achse gefunden. Das gleiche Argument gilt für den Winkel $\omega_{n_{\alpha}\to n_{\beta}}$ für den der Halbmesser $n_{\alpha}^{\prime}$ (entlang $\hat{\alpha}$) der Schnittellipse den Wert $n_{\beta}$ annimmt. Bei gleicher Drehrichtung, wie zuvor nimmt $n_{\alpha}^{\prime}$ alle Werte zwischen $n_{\alpha}$ und $n_{\gamma}$ an. Damit ist die zweite optische Achse gefiunden. 
-
-Da der Wert von $n_{\beta}$ zwischen den Werten von $n_{\alpha}$ und $n_{\gamma}$ liegt und die Wertebereiche von $n_{\gamma}^{\prime}$ und $n_{\alpha}^{\prime}$ jeweils stetig variieren muss es genau zwei optische Achsen geben, die auf diese Weise eindeutig bestimmt sind. Sie können nicht übereinanderliegen, weil nach Voraussetzung $n_{\alpha}\neq n_{\beta}\neq n_{\gamma}$.  
-
-Verläuft ein Lichtstrahl entlang einer der beiden optischen Achsen würde man aus der Diskussion uniaxialer Kristalle zunächst erwarten, dass es nicht zur Doppelbrechung kommt. Tatsächlich ist dies bei biaxialen kristallen doch der Fall. Dabei entsteht für die Polarisationskomponente parallel zu $\hat{\beta}$ ein ordentlicher Strahl. Für alle anderen Polarisationskomponenten entsteht ein außerordentlicher Strahl, der für jede Polarisationskomponente eine andere Ausbreitungsrichtung, aber den gleichen Brechungsindex besitzt. Daher sind alle Polarisationsrichtungen gleichberechtigt und es findet keine diskrete Aufspaltung in zwei Strahlen statt. Stattdessen kommt es zur [konischen Brechung](https://de.wikipedia.org/wiki/Indexellipsoid#Innere_konische_Refraktion) des außerordentlichen Strahls. Der Grund hierfür liegt darin, dass der biaxiale Kristall entlang der optischen Achsen nicht, wie der uniaxiale Kristall isotrop ist. Für alle anderen Einstrahlrichtungen treten zwei außerdorendliche Strahlen auf. 
-
-Glimmer ist ein biaxialer Kristall.
-
 # Navigation
 
-[Main](https://gitlab.kit.edu/kit/etp-lehre/p2-praktikum/students/-/tree/main/Polarisation)
+[Main](https://gitlab.kit.edu/kit/etp-lehre/p2-praktikum/students/-/tree/main/Polarisation) | [Weiter](https://gitlab.kit.edu/kit/etp-lehre/p2-praktikum/students/-/blob/main/Polarisation/doc/Hinweise-Doppelbrechung-a.md)
+
