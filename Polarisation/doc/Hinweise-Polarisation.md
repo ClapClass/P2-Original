@@ -39,7 +39,7 @@ Je nachdem welche weiteren Randbedingungen für die Beträge $`|\vec{E}_{1}|`$ u
 
 ### Erzeugung von elliptisch polarisiertem Licht mit Hilfe einer Verzögerungsplatte
 
-Eine [Verzögerungsplatte](https://de.wikipedia.org/wiki/Verz%C3%B6gerungsplatte) (VP) ist ein optisches Bauelement bestehend aus einem doppelbrechenden Kristall in dem sich i.a. zwei senkrecht zueinander, linear polarisierte Strahlen S und L mit unterschliedlichen Geschwindigkeiten $c_{i}=c/n_{i}, \ i=S,\ L$ ausbreiten, wobei $c$ der Lichtgeschwindigkeit im Vakuum entspricht. Wir definieren $c_{S}>c_{L}$. Die Polarisationsrichtung von S und L bezeichnen wir jeweils als **schnelle und langsame Achse**. Je nach optischer Orientierung entspricht entweder die schnelle oder die langsame Achse der optischen Achse des Mediums. 
+Eine [Verzögerungsplatte](https://de.wikipedia.org/wiki/Verz%C3%B6gerungsplatte) (VP) ist ein optisches Bauelement bestehend aus einem doppelbrechenden Kristall in dem sich i.a. zwei senkrecht zueinander, linear polarisierte Strahlen S und L mit unterschliedlichen Geschwindigkeiten $c_{i}=c/n_{i}, \ i=S,\ L$ ausbreiten, wobei $c$ der Lichtgeschwindigkeit im Vakuum entspricht. Wir definieren $`c_{S}>c_{L}`$. Die Polarisationsrichtung von S und L bezeichnen wir jeweils als **schnelle und langsame Achse**. Je nach optischer Orientierung entspricht entweder die schnelle oder die langsame Achse der optischen Achse des Mediums. 
 
 Der Unterschied in $c_{i}$ führt zu einem Unterschied der Wellenlängen 
 $$
