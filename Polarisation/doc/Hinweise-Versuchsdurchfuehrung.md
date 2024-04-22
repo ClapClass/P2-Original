@@ -60,7 +60,7 @@
 
 - Berechnen Sie $\Delta n=\left(n_{\beta} - n_{\gamma}\right)$ aus den in **Aufgabe 2.1** aufgenommenen Intensitätsverteilungen zur elliptischen Polarisation. 
 
-- Den Phasenunterschied $\Delta\phi$ der beiden senkrecht zueinander stehenden Strahlen an der Austrittsfläche von VP können Sie aus dem Verhältnis der maximalen ($\propto U_{\mathrm{max}}$) und minimalen ($\propto U_{\mathrm{min}}$) Intensitäten des elliptisch polarisierten Lichts bestimmen. 
+- Den Phasenunterschied $\Delta\phi$ der beiden senkrecht zueinander stehenden Strahlen an der Austrittsfläche von VP können Sie aus dem Verhältnis der minimalen ($\propto U_{\mathrm{min}}$) zur maximalen ($\propto U_{\mathrm{max}}$) Intensität des elliptisch polarisierten Lichts bestimmen. 
 
 - Das notwendige **Verhältnis der Amplituden** der Strahlen ergibt sich aus der Quadratwurzel des Verhältnisses der Intensitäten. 
 
