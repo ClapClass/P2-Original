@@ -15,25 +15,25 @@ $$
 \vec{E}(k, x) = \vec{E}\,e^{\pm ik\,x}.
 \end{equation*}
 $$
-Jede linear polarisierte Welle mit der Amplitude $\vec{E}$ lässt sich in zwei senkrecht zueinander linear polarisierte Teilwellen mit den Amplituden $\vec{E}_{1}\perp\vec{E}_{2}$, wie in **Abbildung 1** dargestellt, zerlegen: 
+Jede linear polarisierte Welle mit der Amplitude $\vec{E}$ lässt sich in zwei senkrecht zueinander linear polarisierte Teilwellen mit den Amplituden $`\vec{E}_{1}\perp\vec{E}_{2}`$, wie in **Abbildung 1** dargestellt, zerlegen: 
 
 <img src="../figures/PolarisationSkizze.png" width="500" style="zoom:100%;" />
 
-**Abbildung 1**: ((Links) Aufspaltung des Vektors $\vec{E}$ in zwei senkrecht zueinander stehende Komponenten $\vec{E}_{1}\perp \vec{E}_{2}$ und (rechts) elliptische Polarisation für den Fall, dass zwischen den ebenen Wellen zu $\vec{E}_{1}$ und $\vec{E}_{2}$ bei gleicher Wellenzahl $k$ eine Phasendifferenz von $\Delta\phi=\pi/2$ besteht)
+**Abbildung 1**: ((Links) Aufspaltung des Vektors $\vec{E}$ in zwei senkrecht zueinander stehende Komponenten $`\vec{E}_{1}\perp \vec{E}_{2}`$ und (rechts) elliptische Polarisation für den Fall, dass zwischen den ebenen Wellen zu $`\vec{E}_{1}`$ und $`\vec{E}_{2}`$ bei gleicher Wellenzahl $k$ eine Phasendifferenz von $\Delta\phi=\pi/2$ besteht)
 
 ---
 
-Je nachdem welche weiteren Randbedingunen für die Beträge $|\vec{E}_{1}|$ und $|\vec{E}_{2}|$ und Phasenbeziehung $\Delta\phi\in[0,\pi)$ zwischen den Wellen $\vec{E}_{1}$ und $\vec{E}_{2}$ besteht ist $\vec{E}$ unterschiedlich polarisiert: 
+Je nachdem welche weiteren Randbedingungen für die Beträge $`|\vec{E}_{1}|`$ und $`|\vec{E}_{2}|`$ und Phasenbeziehung $\Delta\phi\in[0,\pi)$ zwischen den Wellen $`\vec{E}_{1}`$ und $`\vec{E}_{2}`$ besteht ist $\vec{E}$ unterschiedlich polarisiert: 
 
 - Für $\Delta\phi=0$ ist $\vec{E}$ **linear polarisiert**. 
 
-- Für $\Delta\phi=\pi/2$ und $|\vec{E}_{1}|=|\vec{E}_{2}|$ beschreibt die Spitze von $\vec{E}(x)$ einen Kreis in der Ebene senkrecht zur Ausbreitungsrichtung; man bezeichnet diese Art der Polarisation als **zirkulare Polarisation**.
+- Für $\Delta\phi=\pi/2$ und $`|\vec{E}_{1}|=|\vec{E}_{2}|`$ beschreibt die Spitze von $\vec{E}(x)$ einen Kreis in der Ebene senkrecht zur Ausbreitungsrichtung; man bezeichnet diese Art der Polarisation als **zirkulare Polarisation**.
 
-- Für $\Delta\phi=\pi/2$ und $|\vec{E}_{1}^{\prime}|\neq|\vec{E}_{2}^{\prime}|$ beschreibt die Spitze von $\vec{E}(x)$ eine Ellipse senkrecht zur Ausbreitungsrichtung; man bezeichnet diese Art der Polarisation als **elliptische Polarisation**. Dieser Zustand ist äquivalent zu der Randbedingung $|\vec{E}_{1}|=|\vec{E}_{2}|$ und
+- Für $\Delta\phi=\pi/2$ und $`|\vec{E}_{1}^{\prime}|\neq|\vec{E}_{2}^{\prime}|`$ beschreibt die Spitze von $\vec{E}(x)$ eine Ellipse senkrecht zur Ausbreitungsrichtung; man bezeichnet diese Art der Polarisation als **elliptische Polarisation**. Dieser Zustand ist äquivalent zu der Randbedingung $`|\vec{E}_{1}|=|\vec{E}_{2}|`$ und
 
   ```math
   \begin{equation*}
-  \Delta\phi = \arctan\lef(\frac{|\vec{E}_{1}^{\prime}|}{|\vec{E}_{2}^{\prime}|}\right).
+  \Delta\phi = \arctan\left(\frac{|\vec{E}_{1}^{\prime}|}{|\vec{E}_{2}^{\prime}|}\right).
   \end{equation*}
   ```
 
