@@ -17,9 +17,9 @@ Für die Darstellung von $I_{\mathrm{A}}(U_{B})$ wird eine ansteigende Spannung 
 
 Das Betriebsgerät der Röhre stellt die folgenden Einstellmöglichkeiten zur Verfügung: 
 
-- $U_{1}=0\ldots 5\hspace{0.05cm}V$
-- $U_{2}=0\ldots 30\hspace{0.05cm}V$
-- $U_{3}=0\ldots -10\hspace{0.05cm}V$.
+- $U_{1}=0\ldots 5\hspace{0.05cm}\mathrm{V}$
+- $U_{2}=0\ldots 30\hspace{0.05cm}\mathrm{V}$
+- $U_{3}=0\ldots -10\hspace{0.05cm}\mathrm{V}$.
 
 Dabei werden $U_{1}$ und $U_{3}$ von Hand geregelt. Für die Variation von $U_{2}$ werden drei Betriebsformen angeboten: 
 
@@ -29,7 +29,7 @@ Dabei werden $U_{1}$ und $U_{3}$ von Hand geregelt. Für die Variation von $U_{2
 
 Die Sägezahnspannung empfiehlt sich zum Kennenlernen der Apparatur und beim Einstellen von $\vartheta$, $U_{1}$ und $U_{3}$. Um die Verhältnisse im quasi-stationären Zustand aufzuzeichnen, wird das Speicheroszilloskop am besten mit der linearen Rampe ausgelöst. Der Unterschied zur Darstellung mit Hilfe der Sägezahnspannung sollte deutlich sichtbar werden. Die manuelle Einstellung benötigen sie z.B. für die **Aufgaben 2.2 und 3.2**.
 
-Für die Darstellung von $I_{A}(U_{2})$ empfiehlt sich der **XY-Betrieb des Oszilloskops**. Die Daten können als ($U_{2}$-$I_{A}$-Wertepaare per USB-Stick auf dem Jupyter-Server übertragen und anschließend weiter verarbeitet werden.
+Für die Darstellung von $I_{A}(U_{2})$ empfiehlt sich der **XY-Betrieb des Oszilloskops**. Die Daten können als $U_{2}$-$I_{A}$-Wertepaare per USB-Stick auf dem Jupyter-Server übertragen und anschließend weiter verarbeitet werden.
 
 # Navigation
 
