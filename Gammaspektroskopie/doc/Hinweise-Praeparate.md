@@ -6,7 +6,7 @@
 
 Grundsätzlich unterscheidet man drei Formen radioaktiver Strahlung:
 
-- **$\alpha$-Strahlung**, d.h. Abstrahlung eines $\mathrm{He}$-Kerns. Die Kernladungszahl $Z$ und Massenzahl $A$ des Mutterkerns nehmen dabei jeweils um zwei ab.
+- **$\alpha$-Strahlung**, d.h. Abstrahlung eines $\mathrm{He}$-Kerns. Die Kernladungszahl $Z$ und die Massenzahl $A$ des Mutterkerns nehmen um zwei und vier ab.
 - **$\beta$-Strahlung**, d.h. Abstrahlung eines Elektrons (oder Positrons). Dabei nimmt $Z$ um eins (Elektron) zu oder (Positron) ab und $A$ bleibt gleich. 
 - **$\gamma$-Strahlung**, d.h. Abstrahlung eines (hoch-energetischen) Lichtteilchens (Photons, $\gamma$). Dabei bleiben sowohl $Z$, als auch $A$ gleich. 
 
