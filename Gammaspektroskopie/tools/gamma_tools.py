@@ -23,8 +23,8 @@ from scipy import special
 # Gaussian model function for photopeaks #
 ##########################################
 
-def gaussian (x, mu, sigma = 10, baseline = 0, A = 100):
-    return  A * np.exp(-(x - mu)**2 / (2 * (sigma**2))) + baseline
+def gaussian (x, mu, sigma = 10, baseline = 0, N = 0):
+    return  (1 / (np.sqrt(2*np.pi) * sigma)) * np.exp(-(x - mu)**2 / (2 * (sigma**2))) + baseline / N
 
 
 
@@ -32,8 +32,8 @@ def gaussian (x, mu, sigma = 10, baseline = 0, A = 100):
 # Model function for compton edges using the complementary error function 'erfc' (Convolution of Gaussian and Heaviside-Step-Function) with a quadratic form correction factor #
 ################################################################################################################################################################################
 
-def compton_edge (x, mu, sigma = 10, baseline = 0, A = 100, B = 1):
-    return A * special.erfc((x-mu)/(np.sqrt(2) * sigma)) * (1 + B * (x/mu - 0.5)**2) + baseline
+def compton_edge (x, mu, sigma = 10, baseline = 0, A = 1, B = 1, N = 0):
+    return (A / (2*np.pi * sigma)) * special.erfc((x-mu)/(np.sqrt(2) * sigma)) * (1 + B * (x/mu - 0.5)**2) + baseline / N
 
 
 
@@ -54,9 +54,9 @@ def fit_peak (datax, datay, x1 = None, x2 = None, baseline = 0, showResult = Tru
     # Set axis labels
     axislabels = ['Channel', 'Count']
     # Set model LaTeX expression
-    modelexpression = 'A \\cdot e^{{\\frac{{-(x-\\mu)^2}}{{2 \\sigma^2}}}} + \\mathrm{{baseline}}'
-    # Perform a Gaussian fit on the remaining data, choosing the position of the maximum value in the data as an initial value for the position of the peak and it's value for the height of the peak
-    fit = hist_fit_data(datax_clipped, datay_clipped, model = gaussian, limitedparams = ['mu', 'sigma'], fixedparams = [["baseline", baseline]], mu = datax_clipped[np.argmax(datay_clipped)], A = np.max(datay_clipped), label = label, showResult = showResult, axislabels = axislabels, modelexpression = modelexpression, **initparams)
+    modelexpression = '\\frac{{1}}{{\sqrt{{2 \\pi}} \\sigma}} \\cdot e^{{\\frac{{-(x-\\mu)^2}}{{2 \\sigma^2}}}} + \\frac{{\\mathrm{{baseline}}}}{{N}}'
+    # Perform a Gaussian fit on the remaining data, choosing the position of the maximum value in the data as an initial value for the position of the peak
+    fit = hist_fit_data(datax_clipped, datay_clipped, model = gaussian, limitedparams = ['mu', 'sigma'], fixedparams = [["baseline", baseline], ["N", np.sum(datay_clipped)]], mu = datax_clipped[np.argmax(datay_clipped)], label = label, showResult = showResult, axislabels = axislabels, modelexpression = modelexpression, **initparams)
     # Return fit object
     return fit
 
@@ -85,9 +85,9 @@ def fit_compton (datax, datay, x1 = None, x2 = None, baseline = 0, showResult = 
     # Set axis labels
     axislabels = ['Channel', 'Count']
     # Set model LaTeX expression
-    modelexpression = 'A \\cdot \\mathrm{{erfc}}(\\frac{{x-mu}}{{\\sqrt{{2}} \\sigma}}) \\cdot (1 + B (\\frac{{x}}{{mu}} - \\frac{{1}}{{2}})^2) + \\mathrm{{baseline}}'
+    modelexpression = '\\frac{{A}}{{\sqrt{{2 \\pi}} \\sigma}} \\cdot \\mathrm{{erfc}}(\\frac{{x-mu}}{{\\sqrt{{2}} \\sigma}}) \\cdot (1 + B (\\frac{{x}}{{mu}} - \\frac{{1}}{{2}})^2) + \\frac{{\\mathrm{{baseline}}}}{{N}}'
     # Perform the fit on the remaining data using the estimated position as an initial value
-    fit = hist_fit_data(datax_clipped, datay_clipped, model = compton_edge, limitedparams = ['mu', 'sigma', 'B'], fixedparams = [["baseline", baseline]], mu = mu0, A = np.max(datay_clipped), label = label, axislabels = axislabels, modelexpression = modelexpression, showResult = showResult, **initparams)
+    fit = hist_fit_data(datax_clipped, datay_clipped, model = compton_edge, limitedparams = ['mu', 'sigma', 'B'], fixedparams = [["baseline", baseline], ["N", np.sum(datay_clipped)]], mu = mu0, label = label, axislabels = axislabels, modelexpression = modelexpression, showResult = showResult, **initparams)
     # Return fit object
     return fit
 
@@ -105,7 +105,7 @@ def hist_fit_data (x, y, model = None, label = 'data', constraints = [], fixedpa
     data.label = label  
     data.axis_labels = axislabels
     # Assign data and model to fit
-    fit = HistFit(data, model_function = model, density = False)  
+    fit = HistFit(data, model_function = model, density = True)  
     # Assign parameter constraints and set as initial values
     for a in constraints:
         fit.add_parameter_constraint(name = a[0], value = a[1], uncertainty = a[2])
